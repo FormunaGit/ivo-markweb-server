@@ -18,7 +18,7 @@ Although there is only 1 Markweb server (as far as I know), I encourage you to t
 
 🚧: Under Construction
 
-:x:: Not Public
+❌: Not Public
 
 ### Servers
 
@@ -33,7 +33,7 @@ Although there is only 1 Markweb server (as far as I know), I encourage you to t
 | Open-Source       | ✅ |
 | Consumer Friendly | ✅ |
 | Self-Hostable     | ✅ |
-| Self-Host*ed*     | :x: |
+| Self-Host*ed*     | ❌ |
 
 ### Clients
 
@@ -48,7 +48,8 @@ Although there is only 1 Markweb server (as far as I know), I encourage you to t
 | Open-Source       | ✅ |
 | Consumer Friendly | ✅ |
 | Linux Support     | ✅ |
-| Windows Support   | :x: |
-| MacOS Support     | :x: |
-| iOS Support       | :x: |
-| Android Support   | :x: |
+| Windows Support   | ❌ |
+| MacOS Support     | ❌ |
+| iOS Support       | ❌ |
+| Android Support   | ❌ |
+| HTML5 Support     | ❌ |
