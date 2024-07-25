@@ -42,14 +42,20 @@ Although there is only 1 Markweb server (as far as I know), I encourage you to t
 * GUI only
 * Made with Godot 4
 
+**Mars Markweb Browser** - Access the Markweb from the terminal [✅]
 
-|                   | Urk |
-| ------------------- | :---: |
-| Open-Source       | ✅ |
-| Consumer Friendly | ✅ |
-| Linux Support     | ✅ |
-| Windows Support   | ❌ |
-| MacOS Support     | ❌ |
-| iOS Support       | ❌ |
-| Android Support   | ❌ |
-| HTML5 Support     | ❌ |
+* GUI-like Terminal UI (thanks to Textual)
+* Made with Python
+
+
+|                   | Urk | Mars |
+| :-----------------: | :---: | :----: |
+|    Open-Source    | ✅ |  ✅  |
+| Consumer Friendly | ✅ |  ✅  |
+|   Linux Support   | ✅ |  ✅  |
+|  Windows Support  | ❌ |  ✅  |
+|   MacOS Support   | ❌ |  ✅  |
+|    iOS Support    | ❌ |  ✅  |
+|  Android Support  | ❌ |  ❌  |
+|   HTML5 Support   | ❌ |  ❌  |
+|  CLI/TUI or GUI  | GUI | TUI |

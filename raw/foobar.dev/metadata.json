@@ -1,0 +1,9 @@
+{
+    "name": "FooBar.DEV", 
+    "desc": "The first ever page on the Markweb",
+    "tld": "dev", 
+    "tags": ["developer", "documentation", "help"], 
+    "isPublic": true, 
+    "author": "Formuna", 
+    "landPage": "index.md" 
+}
