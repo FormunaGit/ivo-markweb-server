@@ -24,6 +24,8 @@ Unfortunately, there is a finite amount of TLDs I can make. As much as I would w
 
 If you want to register a domain with one of the above TLDs, just name your folder `yourpagesname.tld` but replace `tld` with whatever TLD you chose, and set the `tld` entry in the metadata to what you chose.
 
+You can also **suggest a TLD** by either making an issue at the Ivo Markweb Server's GitHub repo, or by DM'ing me on Discord (@formuna)
+
 ### Making the `metadata.json` file
 
 The metadata file is what contains important information about the site, having information such as:
@@ -40,13 +42,13 @@ The easiest way to make a metadata file is by making a metadata file (`metadata.
 
 ```json
 {
-    "name": "Replace this with your page's title", 
+    "name": "Replace this with your page's title",
     "desc": "Replace this with a description of your page",
-    "tld": "Refer to ''Getting a TLD'' for what to replace this with", 
-    "tags": ["replace", "this", "with", "actual", "tags"], 
-    "isPublic": "true or false", 
-    "author": "Replace this with your name", 
-    "landPage": "Replace this with what your landing pagename is" 
+    "tld": "Refer to ''Getting a TLD'' for what to replace this with",
+    "tags": ["replace", "this", "with", "actual", "tags"],
+    "isPublic": "true or false",
+    "author": "Replace this with your name",
+    "landPage": "Replace this with what your landing pagename is"
 }
 ```
 

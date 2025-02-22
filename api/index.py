@@ -1,6 +1,12 @@
 from flask import Flask, make_response
 import json
 
+SERVER_VERSION = 1.2
+SERVER_NAME = 'Ivo Markweb Server'
+INSTANCE_NAME = 'Official Ivo Markweb'
+HOSTER = '@formuna on Discord'
+
+
 app = Flask(__name__)
 
 def manager(pagename: str, subpage=None):
@@ -13,13 +19,13 @@ def manager(pagename: str, subpage=None):
         try:
             page = open(f"raw/{pagename}/{metadata['landPage']}").read()
         except Exception as e:
-            page = 'Page does not exist'
+            page = f'Page does not exist (Error: {str(e)}'
             code = 404
     elif subpage != None:
         try:
             page = open(f"raw/{pagename}/{subpage}.md").read()
         except Exception as e:
-            page = 'Subpage does not exist'
+            page = f'Subpage does not exist (Error: {str(e)})'
             code = 404
     else:
         page = 'Error'
@@ -31,7 +37,13 @@ def manager(pagename: str, subpage=None):
 
 @app.route('/')
 def home():
-    return 'Hi :)'
+    resp = f"""Hello world!
+    Running {SERVER_NAME} version {SERVER_VERSION}
+    Hosted by {HOSTER}
+    """
+    r = make_response(resp, 200)
+    r.mimetype = 'text/plain'
+    return resp
 
 @app.route('/page/<pagename>') # Domain
 def getPage(pagename):
@@ -43,6 +55,6 @@ def getSubpage(pagename, subpage):
 
 @app.errorhandler(404)
 def page_not_found(e):
-    resp = make_response("# Page not found", 404)
+    resp = make_response("# Page not found!", 404)
     resp.mimetype = 'text/plain'
     return resp
